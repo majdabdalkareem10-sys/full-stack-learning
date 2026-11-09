@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Lecture 5 - First form practice
+
+What I practiced:
+- Using form to group form fields.
+- Using label and matching it to an input with for and id.
+- Using input, textarea and select with option.
+- Using div for grouping and br for a line break.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<!-- A form groups fields where the user can enter information. -->
+<form>
+
+    <!-- div helps group a label and its input together. -->
+    <div>
+    <label for="name">user name </label>
+    <!-- for="name" connects this label to input id="name". -->
+    <input id="name" />
+    </div>
+    <label for ="pass" >password </label>
+
+    <input id="pass" />
+    <br />
+    <label for ="age">age </label>
+
+    <input id ="age" />
+    <br />
+    <!-- textarea is for writing longer text, like notes. -->
+    <label for="notes">enter notes</label>
+
+    <textarea id="notes" ></textarea>
+    <br />
+
+    <!-- select is a dropdown. option is one of its choices. -->
+    <label for="roles">user role</label>
+    <select id="roles">
+        <option>user</option>
+        <option>admin</option>
+        <option>manager</option>
+    </select>
+    <br />
+</form>
+<!-- br moves the following text to the next line. -->
+<p>my name is <br />majd</p>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+Lecture 5 - HTML input types and validation
+
+What I practiced:
+- text, email, number, password, date, time, color and file inputs.
+- placeholder and required for form fields.
+- minlength, maxlength, min and max for basic validation.
+- radio for one choice and checkbox for multiple choices.
+- select, option, selected, multiple and submit.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- A form holds different inputs that collect user data. -->
+    <form>
+        <div>
+            <!-- A text input lets the user type text. required means it cannot be empty. -->
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="enter name" required minlength="2" maxlength="10">
+        </div>
+        <div>
+            <!-- type="email" checks that the value looks like an email address. -->
+            <label for="email">Email</label>
+            <input id="email" type="email">
+        </div>
+        <div>
+            <!-- type="number" allows numbers. min and max set limits. -->
+            <label for="age">Age</label>
+            <input id="age" type="number" min="18" max="80">
+        </div>
+        <div>
+            <!-- type="password" hides the characters on the screen. -->
+            <label for="password">Password</label>
+            <input id="password" type="password">
+        </div>
+        <div>
+            <!-- Another password field. The browser does not compare both passwords automatically. -->
+            <label for="confirm_password">Confirm Password</label>
+            <input id="confirm_password" type="password">
+        </div>
+        <div>
+            <!-- type="date" lets the user select a date. -->
+            <label for="date">Date of Birth</label>
+            <input id="date" type="date">
+        </div>
+        <div>
+            <!-- type="time" lets the user select a time. -->
+            <label for="time">Time</label>
+            <input id="time" type="time">
+        </div>
+        <div>
+            <!-- type="color" opens a color picker. -->
+            <label for="color">Favorite Color</label>
+            <input id="color" type="color">
+        </div>
+        <div>
+            <!-- A second number field for practice. -->
+            <label for="number">Number</label>
+            <input id="number" type="number">
+        </div>
+        
+        <div>
+            <!-- Radio buttons with the same name allow only one choice in the group. -->
+            <label>Gender</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div>
+            <!-- Checkboxes let the user pick more than one language. -->
+            <label>language</label>
+            <div>
+                <input id="python" type="checkbox">
+                <label for="python">python</label>
+            </div>
+            <div>
+                <input id="javascript" type="checkbox">
+                <label for="javascript">javascript</label>
+            </div>
+            <div>
+                <input id="java" type="checkbox">
+                <label for="java">java</label>
+            </div>
+            <div>
+                <input id="cpp" type="checkbox">
+                <label for="cpp">c++</label>
+            </div>
+        </div>
+
+        <div>
+            <!-- type="file" lets the user choose a file from the computer. -->
+            <label for="file">file</label>
+            <input id="file" type="file">
+        </div>
+
+        <div>
+            <!-- select shows options. selected sets the default choice. -->
+            <label>roles</label>
+            <select required multiple size="1">
+                <!-- <option hidden>choose user role</option> -->
+                <option>user</option>
+                <option>admin</option>
+                <option selected>manager</option>
+            </select>
+        </div>
+
+        <div>
+            <!-- type="submit" is the button used to submit the form. -->
+            <input id="submit" type="submit">
+        </div>
+
+    </form>
+
+</body>
+
+</html>

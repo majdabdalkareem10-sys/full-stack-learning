@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+Lecture 4 - Tables, lists, meta tags and grouping
+
+What I practiced:
+- Page metadata: charset, viewport, description, keywords and Open Graph.
+- A favicon using link.
+- Tables: caption, thead, tbody, tfoot, tr, th and td.
+- Combining table cells with rowspan and colspan.
+- Unordered, ordered and nested lists.
+- Using div to group elements and span for text inside a line.
+-->
+
+
+<html lang="en">
+<head>
+    <!-- Meta tags give information about the page. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is my first table"/>
+    <meta name="keywords" content="table, html, css"/> 
+    <!-- This image appears as the icon in the browser tab. -->
+    <link rel="icon" href="./web.png" />
+    <!-- The title appears on the browser tab. -->
+    <title>Document title page</title>
+
+    <!-- Open Graph tags tell some apps how to preview a shared link. -->
+    <meta property="og:title" content="learn html from zero"/>
+    <meta property="og:description" content="html html html course..."/>
+    <meta property="og:image" content="https://cloudinary.com/glossary/image-url"/>
+    <meta property="og:url" content=""/>
+
+
+</head>
+<body>
+    <!-- A table organizes data into rows and columns. -->
+    <table border="1" width="100px">
+        <!-- caption gives the table a title. -->
+        <caption>Employee Data</caption>
+        <!-- thead contains the heading row. th is a header cell. -->
+        <thead>
+            <tr>
+                <th>id </th>
+                <th>name </th>
+                <th>email </th>
+                <th>age </th>
+            </tr>
+        </thead>
+
+        <!-- tbody contains the table data. tr is a row and td is a cell. -->
+        <tbody>
+            <tr>
+            <!-- rowspan makes this cell cover two rows. -->
+            <td rowspan="2">1</td>
+            <td>majd </td>
+            <td>majdabdalkareem10@gmail.com </td>
+            <td>20 </td>
+           </tr>
+         <tr>
+            <td>majd </td>
+            <td>majdabdalkareem10@gmail.com </td>
+            <td>23 </td>
+        </tr>
+         <tr>
+            <td>2 </td>
+            <td>ghaith </td>
+            <td>ghaith0@gmail.com </td>
+            <td>20 </td>
+        </tr>
+        </tbody>
+        <!-- tfoot is used for a summary at the bottom of the table. -->
+        <tfoot>
+            <tr>
+                <!-- colspan makes one cell cover three columns. -->
+                <td colspan="3"> sum </td>
+
+                
+                <td> 3 </td>
+            </tr>
+        </tfoot>
+        
+        </table>
+
+
+        <!-- ul is an unordered list. Each li is one item. -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <!-- A list item can also contain a link. -->
+        <li> <a href ="#">facebook  </a></li>
+        <!-- A list item can also contain an image. -->
+        <li> <img src="./web.png" alt="logo"/> </li>
+    </ul> 
+
+    <!-- hr draws a horizontal line between content. -->
+    <hr />
+
+    <!-- ol is a numbered/lettered list. type, start and reversed change its order. -->
+    <ol type="A" start="5" reversed = "reversed" >
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <!-- A nested ul is a list inside another list item. -->
+        <li>Item 3
+            <ul>
+                <li>Item 31</li>
+                <li>Item 32</li>
+            </ul>
+        </li>
+        
+    </ol>
+
+
+    <!-- div groups elements together. It is a block element. -->
+    <div>
+        <h2>header</h2>
+        <!-- span selects a small part of text inside a line (unlike a block div). -->
+        <p>this is my first <span>paragraph</span></p>
+    </div>    
+
+    <div>
+        <h2>about </h2>
+    </div>   
+    <div>
+        <h2>services</h2>
+    </div>    
+    <div>
+        <h2>footer  </h2>
+    </div>  
+
+
+
+
+
+
+</body>
+</html>
